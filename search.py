@@ -186,5 +186,5 @@ run the following commands to test the search algorithms
     python pacman.py -l mediumMaze -z .5 -p SearchAgent -a fn=astar,heuristic=manhattanHeuristic
     python pacman.py -l bigMaze -z .5 -p SearchAgent -a fn=astar,heuristic=manhattanHeuristic
 
-6.
+6. python pacman.py -l mediumCorners -p AStarCornersAgent -z 0.5
 '''
