@@ -192,17 +192,28 @@ ucs = uniformCostSearch
 
 '''
 run the following commands to test the search algorithms
-1. python pacman.py -l tinyMaze -p SearchAgent -a fn=depthFirstSearch
+1.  python pacman.py -l tinyMaze -p SearchAgent -a fn=depthFirstSearch
     python pacman.py -l mediumMaze -p SearchAgent -a fn=depthFirstSearch
     python pacman.py -l bigMaze -z .5 -p SearchAgent -a fn=depthFirstSearch
 
-4. python pacman.py -l tinyMaze -p SearchAgent -a fn=astar,heuristic=nullHeuristic
+2.  python pacman.py -l tinyMaze -p SearchAgent -a fn=breadthFirstSearch
+    python pacman.py -l mediumMaze -p SearchAgent -a fn=breadthFirstSearch
+    python pacman.py -l bigMaze -z .5 -p SearchAgent -a fn=breadthFirstSearch
+
+3.  python pacman.py -l tinyMaze -p SearchAgent -a fn=uniformCostSearch
+    python pacman.py -l mediumMaze -p SearchAgent -a fn=uniformCostSearch
+    python pacman.py -l bigMaze -z .5 -p SearchAgent -a fn=uniformCostSearch
+
+4.  python pacman.py -l tinyMaze -p SearchAgent -a fn=astar,heuristic=nullHeuristic
     python pacman.py -l mediumMaze -p SearchAgent -a fn=astar,heuristic=nullHeuristic
     python pacman.py -l bigMaze -z .5 -p SearchAgent -a fn=astar,heuristic=nullHeuristic
 
     python pacman.py -l tinyMaze -z .5 -p SearchAgent -a fn=astar,heuristic=manhattanHeuristic
     python pacman.py -l mediumMaze -z .5 -p SearchAgent -a fn=astar,heuristic=manhattanHeuristic
     python pacman.py -l bigMaze -z .5 -p SearchAgent -a fn=astar,heuristic=manhattanHeuristic
+
+5.  python pacman.py -l trickySearch -p AStarFoodSearchAgent
+    python pacman.py -l mediumCorners -p SearchAgent -a fn=bfs,prob=CornersProblem
 
 6. python pacman.py -l mediumCorners -p AStarCornersAgent -z 0.5
 '''
